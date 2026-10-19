@@ -24,7 +24,7 @@ In the originating device session, a conventional icon pack with default/night P
 ## Proportional validation
 
 1. **Before installation:** read the generated Manifest and compiled icon; verify unique independent package, original target, zero permissions/Services/Receivers, signature and stable certificate. Check foreground alpha, scale and clipping. A successful build is not proof of actual tint refresh.
-2. **After installation:** compare device APK hash and resolve its launcher Activity. The helper does these checks; successful resolution is not a click-through test.
+2. **After installation:** the helper compares the device APK hash with the build. Also resolve the installed entry's launcher Activity with ADB; component resolution is not a click-through test. The helper checks the original target component before installing, not the new entry's launcher resolution afterward.
 3. **Manual phone acceptance:** select native Nothing themed icons, find the extra entry, place it where desired, tap it and confirm the original app. Switch light→dark and dark→light without reselecting a pack. Confirm the symbol changes with the native icons. Avoid opening sensitive app functions during automation.
 4. **When tests are already done:** reuse relevant evidence. Repeat only what changed or is still uncertain. Do not restart the failed third-party-pack investigation for every icon.
 5. **Failure diagnosis:** wrong selected pack → native mode; opaque square → wrong alpha/luminance input; clipped shape → fitting; bad target → re-resolve current alias; signature mismatch → restore key; unsupported native tint → record launcher/version and stop promising theme support. Never clear the launcher database as a routine fix.
