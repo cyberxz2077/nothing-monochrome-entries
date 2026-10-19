@@ -1,0 +1,14 @@
+.local/
+.venv/
+__pycache__/
+*.pyc
+*.apk
+*.aab
+*.jks
+*.p12
+*.pem
+*.key
+*.idsig
+work/
+out/
+.DS_Store

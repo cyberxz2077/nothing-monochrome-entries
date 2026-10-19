@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nothing Monochrome Entries"
+  short_description: "补齐 Nothing 单色图标：原图提取、重绘、独立入口构建与真机验证"
+  default_prompt: "Use $nothing-monochrome-entries to redraw selected unsupported app icons and install native themed launcher entries while preserving my other Nothing icons."
